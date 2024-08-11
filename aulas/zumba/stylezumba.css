@@ -6,11 +6,12 @@
 }
 
 @font-face  {
-    font-family: 'bluestar';
-    src: url('fonts/Bluestar-MediumItalic.ttf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-     }
+  font-family: 'bluestar';
+  src: url('../../fonts/Bluestar-MediumItalic.ttf') format('truetype');
+  src: url('../../fonts/Bluestar-MediumItalic.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+   }
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #ffffff;
@@ -215,11 +216,11 @@ body {
   
 .background { 
   background-image: url('imgback.jpeg');
-  background-size: cover;
-  height: 400px; 
-  background-position: bottom bottom;
+  background-position: center center;
   background-repeat: no-repeat;
+  background-size: cover;
   background-attachment: fixed;
+  height: 500px; 
   text-align: center;
   display: flex;
   justify-content: center;
@@ -426,4 +427,80 @@ footer {
   margin-bottom: 0px;
   flex: 0;
 }
+}
+@media (max-width:1118px) {
+  .ret{
+    width: 500px;
+  }
+  .containerzap{
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  .containerzap .childzap a img{
+    width: 350px;
+  }
+  .carousel{
+    width: 300px;
+  }
+}
+@media (max-width:1040px)
+{
+
+.containeraulas{
+  justify-content: center;
+  align-items: center;
+}
+.carousel{
+  width: 300px;
+}
+}
+@media (max-width:530px){
+.containeraulas{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.ret{
+  width: 390px;
+}
+.containerzap{
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.containerzap .childzap a img{
+  width: 350px;
+  transform: translate(-20px);
+
+}
+}
+@media (max-width:412px){
+  .ret{
+    width: 330px;
+  }
+  .containerzap{
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  .containerzap .childzap a img{
+    width: 350px;
+    transform: translate(-20px);
+ 
+  }
+}
+@media (max-width:310px){
+  .ret{
+    width: 240px;
+  }
+  .containerzap{
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  .containerzap .childzap a img{
+    width: 350px;
+ 
+  }
 }

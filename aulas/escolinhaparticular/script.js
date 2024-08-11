@@ -27,3 +27,7 @@ let currentSlide = [0, 0, 0];
  document.querySelectorAll('.carousel').forEach((carousel, index) => {
      showSlide(0, index);
  });
+
+ $('.icon').click(function(){
+    $('span').toggleClass("cancel");
+  });
