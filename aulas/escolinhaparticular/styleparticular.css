@@ -8,7 +8,9 @@
 
 @font-face  {
     font-family: 'bluestar';
-    src: url('fonts/Bluestar-MediumItalic.ttf') format('opentype');
+    font-family: 'bluestar';
+    src: url('fonts/Bluestar-MediumItalic.ttf') format('truetype');
+    src: url('fonts/Bluestar-MediumItalic.woff') format('woff');
     font-weight: normal;
     font-style: normal;
      }
