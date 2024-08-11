@@ -454,7 +454,7 @@ footer {
 }
 @media (max-width:530px){
 .containeraulas{
-display: block;
+display: flex;
 justify-content: center;
 align-items: center;
 }
@@ -468,6 +468,36 @@ align-items: center;
 }
 .containerzap .childzap a img{
   width: 350px;
+  transform: translate(-20px);
 
 }
+}
+@media (max-width:412px){
+  .ret{
+    width: 330px;
+  }
+  .containerzap{
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  .containerzap .childzap a img{
+    width: 350px;
+    transform: translate(-20px);
+ 
+  }
+}
+@media (max-width:310px){
+  .ret{
+    width: 240px;
+  }
+  .containerzap{
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  .containerzap .childzap a img{
+    width: 350px;
+ 
+  }
 }
