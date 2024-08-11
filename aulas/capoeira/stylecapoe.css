@@ -6,11 +6,12 @@
 }
 
 @font-face  {
-    font-family: 'bluestar';
-    src: url('fonts/Bluestar-MediumItalic.ttf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-     }
+  font-family: 'bluestar';
+  src: url('../../fonts/Bluestar-MediumItalic.ttf') format('truetype');
+  src: url('../../fonts/Bluestar-MediumItalic.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+   }
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #ffffff;

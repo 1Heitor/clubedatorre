@@ -534,4 +534,9 @@ body {
   flex: 0;
 }
 }
+@media (max-width:424px){
+  .child h1{
+    font-size: 3.5em;
+   }
+}
 
