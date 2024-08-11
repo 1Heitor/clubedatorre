@@ -492,3 +492,20 @@ footer {
    
     }
   }
+  @media (max-width:310px){
+    .ret{
+      width: 240px;
+    }
+    .containerzap{
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+    }
+    .containerzap .childzap a img{
+      width: 350px;
+   
+    }
+    footer{
+      width: 300px;
+    }
+  }
