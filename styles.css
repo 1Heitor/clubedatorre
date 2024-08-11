@@ -217,15 +217,17 @@ body {
 /*Imagem com texto*/
 .background{ 
     background-image: url('imgshome/imgcampo.JPG');
-    background-size: cover;
-    height: 550px;   
+    background-position: center center;
     background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
+    height: 550px;   
     text-align: center;
     justify-content: center;
     align-items: center;
     display: flex;
-}
+  }
+
 
 .child h1{
     font-family: 'bluestar';
