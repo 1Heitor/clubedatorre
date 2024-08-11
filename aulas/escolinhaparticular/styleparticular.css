@@ -229,7 +229,7 @@ body {
 }
 
 .child h1 {
-  font-family: bluestar;
+  font-family: 'bluestar';
   color: white;
   padding: 3px;
   font-size: 3em;
@@ -260,7 +260,7 @@ body {
   align-items: center;
   color: white;
   font-size: 1.2em;
-  font-family: bluestar;
+  font-family: 'bluestar';
   font-weight: bold;
 }
 
