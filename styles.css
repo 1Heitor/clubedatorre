@@ -227,7 +227,7 @@ body {
 }
 
 .child h1{
-    font-family: bluestar;
+    font-family: 'bluestar';
     color: white;
     padding: 3px ;
     font-size: 5em;
