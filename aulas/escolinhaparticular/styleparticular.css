@@ -8,9 +8,8 @@
 
 @font-face  {
     font-family: 'bluestar';
-    font-family: 'bluestar';
-    src: url('fonts/Bluestar-MediumItalic.ttf') format('truetype');
-    src: url('fonts/Bluestar-MediumItalic.woff') format('woff');
+    src: url('../../fonts/Bluestar-MediumItalic.ttf') format('truetype');
+    src: url('../../fonts/Bluestar-MediumItalic.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
      }
@@ -463,7 +462,7 @@ footer {
 }
 @media (max-width:530px){
 .containeraulas{
-  display: block;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -477,6 +476,7 @@ footer {
   }
   .containerzap .childzap a img{
     width: 350px;
+    transform: translate(-20px);
  
   }
 }
@@ -491,6 +491,7 @@ footer {
     }
     .containerzap .childzap a img{
       width: 350px;
+      transform: translate(-20px);
    
     }
   }
@@ -506,8 +507,5 @@ footer {
     .containerzap .childzap a img{
       width: 350px;
    
-    }
-    footer{
-      width: 300px;
     }
   }
