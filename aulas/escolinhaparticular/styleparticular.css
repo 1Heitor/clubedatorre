@@ -227,10 +227,10 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    -webkit-background-size: cover;
     height: 500px; 
     text-align: center;
     display: flex;
-    -webkit-background-size: cover;
     justify-content: center;
     align-items: center;
   }
