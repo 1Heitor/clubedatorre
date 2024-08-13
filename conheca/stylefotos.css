@@ -246,6 +246,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    
   
   }
   .embreve img{
@@ -349,3 +350,29 @@ footer {
   flex: 0;
 }
 }
+@media (max-width:630px){
+  .containercapo img{
+   width: 500px;
+  }
+  }
+  @media (max-width:540px){
+  .containercapo img{
+   width: 400px;
+  }
+  }
+  @media (max-width:484px){
+  .containercapo img{
+    width: 350px;
+  }
+  }
+  @media (max-width:400px){
+  .containercapo img{
+    width: 300px;
+  }
+  }
+  @media (max-width:370px){
+    .containercapo img{
+      width: 250px;
+    }
+  }
+  

@@ -240,6 +240,26 @@ body {
   text-shadow: rgb(6, 97, 158) 2px 2px;
 }
 
+.title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+
+}
+.title h1 {
+  padding-left:10px;
+
+  
+}
+.underline {
+  width: 100px; /* Ajuste a largura da linha aqui */
+  height: 3px; /* Altura da linha */
+  background-color: #0054a7; /* Cor azul escura */
+  margin-top: 5px; /* Espaçamento entre o título e a linha */
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
 
 
 .containeraulas {
