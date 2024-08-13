@@ -480,8 +480,18 @@ footer {
     transform: translate(-20px);
  
   }
+  .background{
+    background-image: url('imgfundomenor.png');
+  }
 }
 @media (max-width:412px){
+    .background{
+      height: 400px;
+    }
+    .background h1{
+      margin-top: 70px;
+  
+    }
     .ret{
       width: 330px;
     }
