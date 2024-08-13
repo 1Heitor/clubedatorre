@@ -4,6 +4,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+@supports (background-size: cover) {
+  .background { 
+      background-size: cover;
+  }
+}
 
 @font-face  {
   font-family: 'bluestar';
@@ -220,6 +225,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  -webkit-background-size: cover;
   height: 500px; 
   text-align: center;
   display: flex;
@@ -442,6 +448,9 @@ footer {
   }
   .carousel{
     width: 300px;
+  }
+  .background{
+    background-attachment:scroll;
   }
 }
 @media (max-width:1040px)

@@ -4,6 +4,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+@supports (background-size: cover) {
+  .background { 
+      background-size: cover;
+  }
+}
 
 @font-face  {
   font-family: 'bluestar';
@@ -221,6 +226,7 @@ body {
   height: 400px; 
   background-repeat: no-repeat;
   background-attachment: fixed;
+  -webkit-background-size: cover;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -344,6 +350,11 @@ footer {
     color: #011e3a;
     background-color: #004b91;
   }
+  @media (max-width:1118px) {
+    .background{
+    background-attachment:scroll;
+  }
+}
   @media (max-width: 768px) {
     footer{ 
       display: block;

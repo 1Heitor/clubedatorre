@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+@supports (background-size: cover) {
+  .background { 
+      background-size: cover;
+  }
+}
+
 @font-face  {
   font-family: 'bluestar';
   src: url('../fonts/Bluestar-MediumItalic.ttf') format('truetype');
@@ -219,6 +225,7 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  -webkit-background-size: cover;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -226,7 +233,7 @@ body {
 }
 
 .child h1 {
-  font-family: bluestar;
+  font-family: 'bluestar';
   color: white;
   padding: 3px;
   font-size: 3em;
@@ -341,6 +348,11 @@ footer {
     color: #011e3a;
     background-color: #004b91;
   }
+  @media (max-width:1118px) {
+    .background{
+    background-attachment:scroll;
+  }
+}
   @media (max-width: 768px) {
     footer{ 
       display: block;
