@@ -512,11 +512,7 @@ body {
     color: #011e3a;
     background-color: #004b91;
   }
-  @media (max-width:1100px){
-    .background{
-    background-attachment:scroll;
-  }
-  }
+
   @media (max-width: 768px) {
     footer{ 
       display: block;
