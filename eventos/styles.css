@@ -203,7 +203,9 @@ body {
       width: 98%;
     }
   }
-
+.texto{
+  font-family: 'Poppins', sans-serif;
+}
   .content{
     z-index: -1;
     position: absolute;
@@ -253,8 +255,10 @@ body {
 .title h1 {
   padding-left:10px;
 
+
   
 }
+
 .underline {
   width: 200px; /* Ajuste a largura da linha aqui */
   height: 3px; /* Altura da linha */
@@ -470,6 +474,9 @@ width: 600px;
   .containerevento img{
     width: 500px;
     }
+    .texto p{
+      text-align: start;
+    }
 }
 @media (max-width:540px){
   .containerevento img{
@@ -518,5 +525,6 @@ width: 600px;
     }
   .containerevento .texto{
     text-align: start;
+
   }
 }
