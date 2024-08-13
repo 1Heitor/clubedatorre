@@ -455,7 +455,16 @@ footer {
   width: 300px;
 }
 }
+@media(max-width:860px){
+  .containerzap .childzap a img{
+    width: 350px;
+    transform: translate(-20px);
+  }
+}
 @media (max-width:530px){
+  .background{
+    background-image: url('imgfundomenor.jpg');
+  }
 .containeraulas{
 display: flex;
 justify-content: center;
@@ -476,31 +485,50 @@ align-items: center;
 }
 }
 @media (max-width:412px){
-  .ret{
-    width: 330px;
+  .background .child h1{
+    width: 98vw;
   }
-  .containerzap{
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
+    .ret{
+      width: 330px;
+    }
+    .containerzap{
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+    }
+    .containerzap{
+      width: 200px;
+    }
+    .containerzap .childzap a img{
+      width: 320px;
+      transform: translate(-10px);
+   
+    }
   }
-  .containerzap .childzap a img{
-    width: 350px;
-    transform: translate(-20px);
- 
+  @media (max-width:310px){
+    .ret{
+      width: 240px;
+    }
+    .containerzap{
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+    }
+    .containerzap{
+      width: 200px;
+    }
+    .containerzap .childzap a img{
+      width: 300px;
+   
+    }
   }
-}
-@media (max-width:310px){
-  .ret{
-    width: 240px;
+  @media (max-width:340px){
+    .containerzap{
+      width: 100px;
+    }
+    .containerzap .childzap a img{
+      width: 250px;
+      transform: translate(0px);
+   
+    }
   }
-  .containerzap{
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-  }
-  .containerzap .childzap a img{
-    width: 350px;
- 
-  }
-}

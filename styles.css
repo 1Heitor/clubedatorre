@@ -534,6 +534,11 @@ body {
   flex: 0;
 }
 }
+@media (max-width:530px){
+    .background{
+      background-image: url('imgshome/imgfundomenor.png');
+    } 
+    }
 @media (max-width:424px){
   .child h1{
     font-size: 3.5em;

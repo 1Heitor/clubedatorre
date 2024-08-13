@@ -488,6 +488,9 @@ footer {
     .background{
       height: 400px;
     }
+    .background .child h1{
+      width: 98vw;
+    }
     .background h1{
       margin-top: 70px;
   
@@ -499,11 +502,24 @@ footer {
       justify-content: center;
       align-items: center;
       padding: 10px;
+      width: 200px;
+    }
     }
     .containerzap .childzap a img{
-      width: 350px;
+      width: 320px;
       transform: translate(-20px);
    
+    }
+  @media (max-width:350px){
+    .containerzap{
+      width: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .containerzap .childzap a img{
+      width: 270px;
+      transform: translate(5px);
     }
   }
   @media (max-width:310px){
@@ -515,8 +531,17 @@ footer {
       align-items: center;
       padding: 10px;
     }
+    .containerzap{
+      width: 200px;
+    }
     .containerzap .childzap a img{
-      width: 350px;
+      width: 300px;
    
     }
   }
+
+
+
+  
+
+ 
