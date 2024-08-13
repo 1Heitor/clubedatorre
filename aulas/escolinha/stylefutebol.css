@@ -440,8 +440,22 @@ footer {
   .carousel{
     width: 300px;
   }
+  .containerzap .childzap a img{
+    transform: translate(-30px);
+  
+  }
 }
-@media (max-width:620px){
+@media (max-width:832px){
+  .ret{
+    width: 400px;
+  }
+  .containerzap .childzap a img{
+    width: 350px;
+    transform: translate(-20px);
+  
+  }
+}
+@media (max-width:638px){
 .ret{
   width: 400px;
 }

@@ -461,6 +461,13 @@ footer {
     width: 300px;
   }
 }
+
+@media (max-width:859px){
+  .childzap a img {
+    transform: translateX(300px);
+  }
+}
+
 @media (max-width:530px){
 .containeraulas{
   display: flex;
@@ -477,7 +484,7 @@ footer {
   }
   .containerzap .childzap a img{
     width: 350px;
-    transform: translate(-20px);
+    transform: translate(-10px);
  
   }
   .background{
@@ -519,7 +526,7 @@ footer {
     }
     .containerzap .childzap a img{
       width: 270px;
-      transform: translate(5px);
+      transform: translate(-4px);
     }
   }
   @media (max-width:310px){
@@ -536,7 +543,7 @@ footer {
     }
     .containerzap .childzap a img{
       width: 300px;
-   
+
     }
   }
 
