@@ -449,6 +449,9 @@ footer {
     .carousel{
       width: 300px;
     }
+      .background{
+      background-attachment:scroll;
+    }
 }
 @media (max-width:1040px)
 {
