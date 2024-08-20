@@ -559,4 +559,8 @@ body {
     font-size: 3.5em;
    }
 }
-
+@media (max-width:370px){
+  .child h1{
+    font-size: 3.3em;
+   }
+}

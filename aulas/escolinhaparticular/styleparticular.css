@@ -470,6 +470,8 @@ footer {
     }
     .containerzap .childzap a img{
       width: 350px;
+     transform: translate(50px);
+
     }
     .carousel{
       width: 300px;
@@ -491,8 +493,8 @@ footer {
 }
 
 @media (max-width:859px){
-  .childzap a img {
-    transform: translateX(300px);
+  .containerzap .childzap a img{
+    transform: translateX(-35px);
   }
 }
 
@@ -512,7 +514,7 @@ footer {
   }
   .containerzap .childzap a img{
     width: 350px;
-    transform: translate(-10px);
+    transform: translate(-35px);
  
   }
   .background{
@@ -540,9 +542,12 @@ footer {
       width: 200px;
     }
     }
+    .containerzap .childzap{
+      transform: translate(20px);
+    }
     .containerzap .childzap a img{
       width: 320px;
-      transform: translate(-20px);
+      
    
     }
   @media (max-width:350px){
@@ -553,8 +558,8 @@ footer {
       align-items: center;
     }
     .containerzap .childzap a img{
-      width: 270px;
-      transform: translate(-4px);
+      width: 300px;
+      transform: translate(-25px);
     }
   }
   @media (max-width:310px){
