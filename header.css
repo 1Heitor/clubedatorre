@@ -240,7 +240,6 @@ a {
 .dropdown__submenu {
   max-height: 0;
   overflow: hidden;
-  width: 140px;
   transition: max-height .4s ease-out;
 }
 
