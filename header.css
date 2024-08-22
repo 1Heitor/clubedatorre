@@ -11,7 +11,7 @@
     font-style: normal;
      }
 body {
-    background-color: #f0f0f0;
+    background-color: #ffffff;
 }
 /*Cabeçalho*/
 :root {
@@ -240,6 +240,7 @@ a {
 .dropdown__submenu {
   max-height: 0;
   overflow: hidden;
+  width: 140px;
   transition: max-height .4s ease-out;
 }
 
@@ -276,6 +277,7 @@ a {
 
   .nav__link {
     padding-inline: 1rem;
+    
   }
 }
 

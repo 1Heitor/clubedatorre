@@ -11,6 +11,11 @@
   }
 }
 
+body {
+  background-color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
 @font-face  {
     font-family: 'bluestar';
     src: url('../../fonts/Bluestar-MediumItalic.ttf') format('truetype');
@@ -18,10 +23,6 @@
     font-weight: normal;
     font-style: normal;
      }
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #ffffff;
-}
   .background { 
     background-image: url('imgfundo.png');
     background-position: center center;
