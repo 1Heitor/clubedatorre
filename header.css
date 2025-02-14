@@ -73,14 +73,48 @@ a {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #0084ff;
+  background: transparent; /* Transparente inicialmente */
   box-shadow: 0 2px 16px hsla(220, 32%, 8%, .3);
   z-index: var(--z-fixed);
+  transition: background 0.3s ease;
+}
+
+.header.scrolled {
+  background: #0084ff; /* Fica azul ao rolar */
 }
 
 /*=============== NAV ===============*/
 .nav {
   height: 100px;
+}
+.nav__link {
+  color: var(--white-color);
+  background: transparent;
+  font-weight: var(--font-semi-bold);
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.nav__link:hover {
+  background-color: rgba(0, 132, 255, 0.2); /* Destaque suave ao passar o mouse */
+}
+
+.dropdown__link {
+  color: var(--white-color);
+  background: transparent;
+  padding: 1.25rem 1.25rem 1.25rem 2.5rem;
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  font-weight: var(--font-semi-bold);
+  transition: background-color 0.3s;
+}
+
+.dropdown__link:hover {
+  background-color: rgba(2, 64, 122, 0.5);
 }
 
 .nav__logo, 
@@ -137,9 +171,6 @@ a {
   opacity: 0;
 }
 
-.nav__link {
-  background: #0084ff;
-}
 /* Navigation for mobile devices */
 @media screen and (max-width: 1118px) {
   .nav__menu {
@@ -164,13 +195,13 @@ a {
 
 .nav__link {
   color: var(--white-color);
-  background-color: var(--black-color);
+  background-color: transparent;
   font-weight: var(--font-semi-bold);
   padding: 1.25rem 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: background-color .3s;
+  transition: background-color 0.3s;
 }
 
 .nav__link:hover {
@@ -337,7 +368,7 @@ a {
   }
 
   .dropdown__submenu {
-    position: absolute;
+    position: absolute; 
     left: 100%;
     top: .5rem;
   }

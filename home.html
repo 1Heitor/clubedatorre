@@ -1,217 +1,211 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clube da Torre</title>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="header.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clube da Torre</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header class="header">
-        <nav class="nav container">
-           <div class="nav__data">
-              <a href="home.html" class="nav__logo">
-                 <img src="imgshome/Clube Logo.png" alt="">
-              </a>
+  <header class="header">
+    <nav class="nav container">
+      <div class="nav__data">
+        <a href="home.html" class="nav__logo">
+          <img src="imgshome/Clube Logo.png" alt="Logo do Clube">
+        </a>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-line nav__burger"></i>
+          <i class="ri-close-line nav__close"></i>
+        </div>
+      </div>
+      <!--=============== NAV MENU ===============-->
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="dropdown__item">
+            <div class="nav__link">
+              <p>O Clube</p> <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+            </div>
+            <ul class="dropdown__menu">
+              <li><a href="home.html" class="dropdown__link">Início</a></li>
+              <li><a href="clube/historia.html" class="dropdown__link">História</a></li>
+            </ul>
+          </li>
+          <li class="dropdown__item">
+            <div class="nav__link">
+              Conheça <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+            </div>
+            <ul class="dropdown__menu">
+              <li><a href="conheca/fotos.html" class="dropdown__link">Fotos</a></li>
+              <li><a href="conheca/videos.html" class="dropdown__link">Vídeos</a></li>
+            </ul>
+          </li>
+          <li class="dropdown__item">
+            <div class="nav__link">
+              Aulas <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+            </div>
+            <ul class="dropdown__menu">
+              <li><a href="aulas/escolinhaparticular/escolinhaparticular.html" class="dropdown__link">Escolinha Particular</a></li>
+              <li><a href="aulas/escolinha/escolinha.html" class="dropdown__link">Escolinha de Futebol</a></li>
+              <li><a href="aulas/zumba/zumba.html" class="dropdown__link">Zumba</a></li>
+              <li><a href="aulas/academia/academia.html" class="dropdown__link">Atividade Física</a></li>
+              <li><a href="aulas/danca/danca.html" class="dropdown__link">Dança de Salão</a></li>
+              <li><a href="aulas/capoeira/capoeira.html" class="dropdown__link">Capoeira</a></li>
+            </ul>
+          </li>
+          <li><a href="eventos/eventos.html" class="nav__link">Eventos</a></li>
+          <li><a href="locacoes/locacoes.html" class="nav__link">Locações</a></li>
+          <li><a href="contato/contato.html" class="nav__link">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section (com onda no final para a próxima seção branca) -->
+    <section class="hero wave-section animate">
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <h1>Clube da Torre</h1>
+        <h2>Seu melhor clube de Niterói</h2>
+        <a href="https://www.instagram.com/clubedatorrerj/" target="_blank">
+          <button class="cta">Venha conhecer!</button>
+        </a>
+      </div>
+
+      <!-- Onda de transição para a seção .services (que é #fff) -->
+      <div class="wave-divider wave-bottom">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M985.66,50.26C913.09,69.41,840.52,88.56,761,88
+               C680.86,87.42,602.77,66.21,521.06,63.12
+               C429.25,59.69,337.93,85.37,247.08,91.63
+               C185.49,96,120.84,84.23,60.11,72.1
+               C39.62,67.84,19.31,63.36,0,59.76
+               V120H1200V0
+               C1148.11,14.25,1093.06,31.07,1039.42,42.61
+               C1020.7,46.61,1002.05,49.03,985.66,50.26Z"
+            class="shape-fill" />
+        </svg>
+      </div>
+    </section>
+
+    <!-- Services Section (com onda no final para a próxima seção .about #f7f7f7) -->
+    <section class="services wave-section animate">
+      <div class="container">
+        <h2 class="section-title">Destaques</h2>
+        <p class="section-subtitle">Experiências exclusivas para toda a família</p>
+        <div class="cards">
+          <div class="card">
+            <img src="imgevento/alimentos.jpeg" alt="Projeto Recomeço">
+            <div class="card-content">
+              <h3>Projeto Recomeço</h3>
+              <p>Iniciativa que transforma vidas com doações e apoio à comunidade.</p>
+              <a href="eventos/eventos.html" class="card-btn">Saiba Mais</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="imgevento/embreve.png" alt="Evento 2">
+            <div class="card-content">
+              <h3>Em Breve</h3>
+              <p>Novidades que estão por vir para surpreender nossos sócios.</p>
+              <a href="eventos/eventos.html" class="card-btn">Em Breve</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="imgevento/embreve.png" alt="Evento 3">
+            <div class="card-content">
+              <h3>Em Breve</h3>
+              <p>Em breve: mais eventos, mais experiências e muita diversão.</p>
+              <a href="eventos/eventos.html" class="card-btn">Em Breve</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Onda de transição para a próxima seção .about (fundo #f7f7f7) -->
+      <div class="wave-divider wave-bottom">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M985.66,50.26C913.09,69.41,840.52,88.56,761,88
+               C680.86,87.42,602.77,66.21,521.06,63.12
+               C429.25,59.69,337.93,85.37,247.08,91.63
+               C185.49,96,120.84,84.23,60.11,72.1
+               C39.62,67.84,19.31,63.36,0,59.76
+               V120H1200V0
+               C1148.11,14.25,1093.06,31.07,1039.42,42.61
+               C1020.7,46.61,1002.05,49.03,985.66,50.26Z"
+            class="shape-fill" />
+        </svg>
+      </div>
+    </section>
+
+    <!-- About Section (com onda no final para a próxima seção .map, que será #fff) -->
+    <section class="about wave-section animate">
+      <div class="container about-container">
+        <h2 class="section-title">Clube da Torre</h2>
+        <p>Fundado em 1983, o Clube da Torre é referência em Niterói, promovendo o esporte, a educação e a cultura para transformar vidas. Com uma estrutura moderna, nosso clube conta com campo society, salão de festas, bar e churrasqueira, além de projetos voltados à comunidade e à juventude.</p>
+        <a href="clube/historia.html" class="about-btn">Conheça nossa História</a>
+      </div>
+
+      <!-- Onda de transição para a seção .map (que definiremos com fundo #fff) -->
+      <div class="wave-divider wave-bottom">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M985.66,50.26C913.09,69.41,840.52,88.56,761,88
+               C680.86,87.42,602.77,66.21,521.06,63.12
+               C429.25,59.69,337.93,85.37,247.08,91.63
+               C185.49,96,120.84,84.23,60.11,72.1
+               C39.62,67.84,19.31,63.36,0,59.76
+               V120H1200V0
+               C1148.11,14.25,1093.06,31.07,1039.42,42.61
+               C1020.7,46.61,1002.05,49.03,985.66,50.26Z"
+            class="shape-fill" />
+        </svg>
+      </div>
+    </section>
+    <div id="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.1544325125765!2d-43.06698789001412!3d-22.907674037814505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99866046711105%3A0xb0d2f1bbd7bcd954!2sClube%20da%20Torre!5e0!3m2!1spt-BR!2sbr!4v1721910550089!5m2!1spt-BR!2sbr" 
+                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        </div>
+        <footer> 
+          <div class="containerfoot">
+            <div class="logofoot">
+              <img src="imgshome/Clube Logo.png" alt="Logo">
+            </div>
+            <div class="footer-section">
+              <h4>Instagram</h4>
+              <p><a href="https://www.instagram.com/clubedatorrerj/" target="_blank">@Clubedatorrerj</a></p>
+            </div>
+            <div class="footer-section">
+              <h4>Facebook</h4>
+              <p><a href="https://www.facebook.com/clubedatorre/" target="_blank">Clube Da Torre</a></p>
+            </div>
+            <div class="footer-section">
+              <h4>Endereço</h4>
+              <p>R. Leopoldo Muilaert - Largo da Batalha, Niterói - RJ, 24320-330</p>
+            </div>
+            <div class="footer-section">
+              <h4>Funcionamento</h4>
+              <p>Segunda à Sexta <br>06:00 às 00:00</br></p>
+              <p style="padding: 5px;">Sábado <br>08:00 às 19:00</br></p>
+              <p>Domingo <br>06:00 às 17:00</br></p>
               
-              <div class="nav__toggle" id="nav-toggle">
-                 <i class="ri-menu-line nav__burger"></i>
-                 <i class="ri-close-line nav__close"></i>
-              </div>
-           </div>
-    
-           <!--=============== NAV MENU ===============-->
-           <div class="nav__menu" id="nav-menu">
-              <ul class="nav__list">
-                 <li class="dropdown__item">
-                    <div class="nav__link">
-                       <p>O Clube</p> <i class="ri-arrow-down-s-line dropdown__arrow"></i>
-                    </div>
-                    <ul class="dropdown__menu">
-                      <li>
-                         <a href="home.html" class="dropdown__link">
-                         Inicio
-                         </a>                          
-                      </li>
-                       <li>
-                          <a href="clube/historia.html" class="dropdown__link">
-                             História
-                          </a>                          
-                       </li>
-                    </ul>
-    
-                 <li class="dropdown__item">
-                    <div class="nav__link">
-                       Conheça <i class="ri-arrow-down-s-line dropdown__arrow"></i>
-                    </div>
-                    <ul class="dropdown__menu">
-                       <li>
-                          <a href="conheca/fotos.html" class="dropdown__link">
-                              Fotos 
-                          </a>                          
-                       </li>
-                       <li>
-                          <a href="conheca/videos.html" class="dropdown__link">
-                              Videos
-                          </a>
-                       </li>
-                    </ul>
-    
-                 <li class="dropdown__item">
-                    <div class="nav__link">
-                       Aulas <i class="ri-arrow-down-s-line dropdown__arrow"></i>
-                    </div>
-                    <ul class="dropdown__menu">
-                       <li>
-                          <a href="aulas/escolinhaparticular/escolinhaparticular.html" class="dropdown__link">
-                              Escolinha de Futebol Particular
-                          </a>                          
-                       </li>
-                       <li>
-                         <li>
-                            <a href="aulas/escolinha/escolinha.html" class="dropdown__link">
-                                Escolinha de Futebol
-                            </a>                          
-                         </li>
-                         <li>
-                          <a href="aulas/zumba/zumba.html" class="dropdown__link">
-                              Zumba
-                          </a>
-                       </li>
-                       <a href="aulas/academia/academia.html" class="dropdown__link">
-                        Atividade Física
-                     </a>
-    
-                    </li>
-                    <a href="aulas/danca/danca.html" class="dropdown__link">
-                      Dança de salão
-                   </a>
-                 </li>
-                 <a href="aulas/capoeira/capoeira.html" class="dropdown__link">
-                  Capoeira
-               </a>
-              </li>
-                    </ul>
-                 </li>
-                 <li><a href="eventos/eventos.html" class="nav__link">Eventos</a></li>
-                 <li><a href="locacoes/locacoes.html" class="nav__link">Locações</a></li>
-    
-                 <!--=============== DROPDOWN 2 ===============-->
-                 
-                 <li><a href="contato/contato.html" class="nav__link">Contato</a></li>
-              </ul>
-           </div>
-        </nav>
-     </header>
-        <div class="background">
-            <div class="child">
-                <h1>Clube da Torre</h1>
-                <h2>Seu melhor clube de Niterói.</h2>
-                    <a href="https://www.instagram.com/clubedatorrerj/" target="_blank">
-                       <button class="conhecer">Venha conhecer!</button>
-                    </a>
             </div>
-        </div> 
-        <div>
-          <div class="fundo">
-            <div class="container_evento">
-                <h1>Eventos</h1>
-                <div class="line"></div>
-                <div class="events">
-                  <div class="event">
-                    <div class="event-info">
-                      <h2>Projeto Recomeço</h2>
-                      <p>O Projeto qualificante nos ajudou doando alimentos</p>
-                      <div class="event-image">
-                        <img src="imgevento/alimentos.jpeg" alt="Evento 1">
-                      </div>
-                      <a href="eventos/eventos.html"><button class="learn-more">Saiba Mais</button></a>
-                    </div>
-                  </div>
-                  <div class="event">
-                    <div class="event-info">
-                      <h2>Em Breve</h2>
-                      <p>Em Breve</p>
-                      <div class="event-image">
-                        <img src="imgevento/embreve.png" alt="Evento 2">
-                      </div>
-                      <a href="eventos/eventos.html"><button class="learn-more">Em Breve</button></a>
-                    </div>
-                  </div>
-                  <div class="event">
-                    <div class="event-info">
-                      <h2>Em Breve</h2>
-                      <p>Em Breve</p>
-                      <div class="event-image">
-                        <img src="imgevento/embreve.png" alt="Evento 3">
-                      </div>
-                      <a href="eventos/eventos.html"><button class="learn-more">Em Breve</button></a>
-                    </div>
-                  </div>
-                  <div class="event">
-                    <div class="event-info">
-                      <h2>Em Breve</h2>
-                      <p>Em Breve</p>
-                      <div class="event-image">
-                        <img src="imgevento/embreve.png" alt="Evento 4">
-                      </div>
-                      <a href="eventos/eventos.html"><button class="learn-more">Em Breve</button></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-                    </div>
           </div>
-          <div class="historia">
-            <h1>O Clube &#x1F5FC;</h1>
-            <p>Fundado 1983 o CLUBE DA TORRE tem em seu Presidente, a grande força para figurar com boas ideias para o desenvolvimento do clube. O Clube da Torre é uma organização sem fins lucrativos, com sede em Niterói no bairro Largo da Batalha, que utiliza o esporte, a educação e a cultura como ferramentas para o desenvolvimento humano.</p>
-            <p>Com uma estrutura enxuta o CLUBE DA TORRE, o qual conta com um campo society de grama sintética, salão de festa, bar e churrasqueira. Num projeto ousado o CLUBE DA TORRE veem estruturando um Centro de Treinamento que propiciará uma melhor preparação para os jovens da sua comunidade.</p>
-            <p style="padding-bottom: 40px;">Devido ao trabalho sério e competente, o CLUBE DA TORRE é hoje, na região, referência. Preocupados em manter uma estrutura profissionalizada, o CLUBE DA TORRE mostra mais uma vez seu caráter arrojado ao lançar este projeto, onde através de parcerias buscará alcançar melhores resultados no âmbito esportivo, bem como atenderá também o aspecto social num trabalho voltado a comunidade e focado nas crianças.</p>
-              <a class="conheca" href="clube/historia.html"><button>Conheça a História</button></a>
+          <hr class="footer-line">
+          <div class="whatsapp">
+            <h4>WhatsApp</h4>
+            <p><a href="https://wa.link/qumnvy">+55 21 97113-4079</a></p>
           </div>
-          <div id="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.1544325125765!2d-43.06698789001412!3d-22.907674037814505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99866046711105%3A0xb0d2f1bbd7bcd954!2sClube%20da%20Torre!5e0!3m2!1spt-BR!2sbr!4v1721910550089!5m2!1spt-BR!2sbr" 
-                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-            </div>
-            <footer> 
-              <div class="containerfoot">
-                <div class="logofoot">
-                  <img src="imgshome/Clube Logo.png" alt="Logo">
-                </div>
-                <div class="footer-section">
-                  <h4>Instagram</h4>
-                  <p><a href="https://www.instagram.com/clubedatorrerj/" target="_blank">@Clubedatorrerj</a></p>
-                </div>
-                <div class="footer-section">
-                  <h4>Facebook</h4>
-                  <p><a href="https://www.facebook.com/clubedatorre/" target="_blank">Clube Da Torre</a></p>
-                </div>
-                <div class="footer-section">
-                  <h4>Endereço</h4>
-                  <p>R. Leopoldo Muilaert - Largo da Batalha, Niterói - RJ, 24320-330</p>
-                </div>
-                <div class="footer-section">
-                  <h4>Funcionamento</h4>
-                  <p>Segunda à Sexta <br>06:00 às 00:00</br></p>
-                  <p style="padding: 5px;">Sábado <br>08:00 às 19:00</br></p>
-                  <p>Domingo <br>06:00 às 17:00</br></p>
-                  
-                </div>
-              </div>
-              <hr class="footer-line">
-              <div class="whatsapp">
-                <h4>WhatsApp</h4>
-                <p><a href="https://wa.link/qumnvy">+55 21 97113-4079</a></p>
-              </div>
-            </footer>
-               <div class="copyright">
-               <p>2024 Clube da Torre | Futebol e Eventos © Todos os direitos reservados.
-                  <br>Desenvolvido por Heitor Correa.</br></p>
-            </div>
-<script src="script.js"></script>
+        </footer>
+           <div class="copyright">
+           <p>2024 Clube da Torre | Futebol e Eventos © Todos os direitos reservados.
+              <br>Desenvolvido por Heitor Correa.</br></p>
+        </div>
+  <script src="script.js"></script>
 </body>
 </html>
